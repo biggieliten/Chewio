@@ -1,0 +1,6 @@
+@Chewio.API_HostAddress = http://localhost:5269
+
+GET {{Chewio.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
