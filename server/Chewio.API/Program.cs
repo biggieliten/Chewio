@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+
 builder.Services.AddCors(options =>
 {
 	options.AddDefaultPolicy(policy =>
@@ -23,7 +27,6 @@ var db = scope.ServiceProvider.GetRequiredService<ChewioDbContext>();
 db.Database.EnsureCreated();
 
 // builder.Services.AddControllers();
-
 
 app.UseCors();
 
